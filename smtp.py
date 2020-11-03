@@ -1,6 +1,6 @@
+import os
 import smtplib
-import os, glob
-import time
+
 #import mimetypes
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -12,7 +12,7 @@ def Send(subj="Test", Text="Test", me='noreply@inbank.msk', you='reglament@in-ba
     server = "ex01.inbank.msk:587"
     #port = 2525
     user_name = "noreply@inbank.msk"
-    user_passwd = "6J2QrnC86a6xFaPiRkGs"
+    user_passwd = "*****************"
 
     body = MIMEText(Text, "", "cp1251")
     msg['Subject'] = "[ROBOT] " + subj
